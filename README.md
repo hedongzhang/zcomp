@@ -1,9 +1,12 @@
 ## zcomp
 compress file tool
 
+## description
+compress the file in 8k units, zlib and zstd are currently supported.
+
 ## example
 ```shell
-# compress data.dbf
+# compress data.dbf use zstd
 ./zzstd /mnt/nvme0n1/data.dbf
 
 TOTAL:3538945    UNKNOW:0
@@ -17,7 +20,7 @@ TOTAL:3538945    UNKNOW:0
 6K~7K: 830
 7K~8K: 0
 
-# decompress data.dbf.zstd
+# decompress data.dbf.zstd 
 ./zzstd /mnt/nvme0n1/data.dbf.zstd
 
 TOTAL:3538945    UNKNOW:0
